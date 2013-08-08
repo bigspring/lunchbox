@@ -1,9 +1,9 @@
-wp_install() {
+lunchbox() {
 	latest="http://wordpress.org/latest.zip"
 	curl -O $latest 
 	unzip latest.zip
 	rm -rf __MACOSX latest.zip
 	cp -rf ./wordpress/* ./
 	rm -rf ./wordpress/ ./wp-content/plugins/hello.php ./readme.html
-	touch robots.txt
+	touch robots.txt	
 }
