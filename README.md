@@ -1,7 +1,11 @@
 lunchbox
 ========
 
-A clever little bash script that get your up and running with WordPress and essential scripts in a few seconds.
+A clever little bash script for Mac OS X that gets you up and running with WordPress and essential plugins in a few seconds. Automatically downloads WordPress and an essential arsenal of plugins (listed below).
+
+Suggestions? Ideas? Submit an issue!
+
+Made in Nottingham by the team @bigspringweb
 
 features
 --------
