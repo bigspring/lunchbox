@@ -1,7 +1,7 @@
 lunchbox() {
 
 	# downloads latest stable build of WordPress
-	echo "downloading WordPress..."
+	echo "packing WordPress..."
 	
 	latest="http://wordpress.org/latest.zip"
 	curl -O $latest 
@@ -12,17 +12,27 @@ lunchbox() {
 	touch robots.txt
 
 	
-	# downloads monolith WordPress theme (https://github.com/bigspring/monolith)
-	echo "downloading monolith..."
+	# pack monolith WordPress theme (https://github.com/bigspring/monolith)
+	echo "packing monolith..."
 	
 	package="1.0-wip.zip"	
-	monolith="https://github.com/bigspring/monolith/archive/$package"
+	url="https://github.com/bigspring/monolith/archive/$package"
 	cd wp-content/themes
-	curl -LOk $monolith
-	unzip 1.0-wip.zip
+	curl -LOk $url
+	unzip $package
 	rm -rf $package
 	mv monolith-1.0-wip monolith
 	
+	# pack YOAST WordPress SEO Plugin
+	echo "packing YOAST..."
+
+	package="wordpress-seo.latest-stable.zip"	
+	url="http://downloads.wordpress.org/plugin/$package"
+	cd -
+	cd wp-content/plugins
+	curl -LOk $url
+	unzip $package
+	rm -rf $package
 	
 	# script ends
 	echo "lunch is served!"
