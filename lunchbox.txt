@@ -1,5 +1,7 @@
 lunchbox() {
 
+	# lunchbox v1.0.4
+	
 	# downloads latest stable build of WordPress
 	echo "packing WordPress..."
 	
