@@ -1,7 +1,11 @@
 lunchbox() {
 
+	# lunchbox 1.0.2
+	# built by @bigspringweb
+	
 	# downloads latest stable build of WordPress
-	echo "packing WordPress..."
+	#----------------------------------
+	echo "unpacking WordPress..."
 	
 	latest="http://wordpress.org/latest.zip"
 	curl -O $latest 
@@ -13,7 +17,8 @@ lunchbox() {
 
 	
 	# monolith WordPress theme (https://github.com/bigspring/monolith)
-	echo "packing monolith..."
+	#----------------------------------
+	echo "unpacking monolith..."
 	
 	package="1.0-wip.zip"	
 	url="https://github.com/bigspring/monolith/archive/$package"
@@ -25,12 +30,11 @@ lunchbox() {
 	
 	
 	# plugins
-	# ------------------------------------------------------------------	
 	echo="packing plugins…"
 	
-
 	# YOAST WordPress SEO Plugin
-	echo "packing YOAST..."
+	#----------------------------------
+	echo "unpacking YOAST..."
 
 	package="wordpress-seo.latest-stable.zip"	
 	url="http://downloads.wordpress.org/plugin/$package"
@@ -42,17 +46,19 @@ lunchbox() {
 
 	
 	# W3 Total cache
-	echo "packing W3 Total Cache…"
+	#----------------------------------
+	echo "unpacking W3 Total Cache…"
 	
 	package="w3-total-cache.latest-stable.zip"
 	url="http://downloads.wordpress.org/plugin/$package"
 	curl -LOk $url
 	unzip $package
-	rm -rf $package	
-	
+	rm -rf $package		
 
-	# Force Regenrate Thumbnails
-	echo "packing Force Regenrate Thumbnails…"
+
+	# Force Regenerate Thumbnails
+	#----------------------------------
+	echo "unpacking Force Regenrate Thumbnails…"
 	
 	package="force-regenerate-thumbnails.latest-stable.zip"
 	url="http://downloads.wordpress.org/plugin/$package"
@@ -62,7 +68,8 @@ lunchbox() {
 
 
 	# Widget Logic
-	echo "packing Widget Logic…"
+	#----------------------------------
+	echo "unpacking Widget Logic…"
 	
 	package="widget-logic.latest-stable.zip"
 	url="http://downloads.wordpress.org/plugin/$package"
@@ -71,7 +78,41 @@ lunchbox() {
 	rm -rf $package	
 
 
+	# Bulk Page Creator
+	#----------------------------------
+	echo "unpacking Bulk Page Creator…"
+	
+	package="bulk-page-creator.latest-stable.zip"
+	url="http://downloads.wordpress.org/plugin/$package"
+	curl -LOk $url
+	unzip $package
+	rm -rf $package	
+
+	
+	# NavXT
+	#----------------------------------
+	echo "unpacking Breadcrumb NavXT…"
+	
+	package="breadcrumb-navxt.latest-stable.zip"
+	url="http://downloads.wordpress.org/plugin/$package"
+	curl -LOk $url
+	unzip $package
+	rm -rf $package	
+
+
+	# Advanced Text Widget
+	#----------------------------------
+	echo "unpacking Advanced Text Widget…"
+	
+	package="advanced-text-widget.latest-stable.zip"
+	url="http://downloads.wordpress.org/plugin/$package"
+	curl -LOk $url
+	unzip $package
+	rm -rf $package	
+
+
 	# script ends
-	echo "lunch is served!"
+	#----------------------------------
+	echo "all done... lunch is served!"
 	
 }

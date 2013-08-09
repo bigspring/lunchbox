@@ -10,8 +10,17 @@ Made in Nottingham by the team @bigspringweb
 features
 --------
 
-* installs WordPress from the latest stable build
-* plugins coming soon!
+Lunchbox will install the following tgings:
+
+* WordPress (latest stable build)
+* monolith WordPress starter theme (https://github.com/bigspring/monolith)
+* YOAST WordPress SEO Plugin
+* W3 Total Cache
+* Force Regenrate Thumbnails
+* Widget Logic
+* Bulk Page Creator
+* Breadcrumb NavXT
+* Advanced Text Widget
 
 
 installation
@@ -22,4 +31,6 @@ installation
 usage
 ------
 
+* in command line, navigate to the folder into which you want to install your site (e.g. ~/htdocs/mysite)
 * run 'lunchbox' from command line
+* wait for the lunchbox to unpack, and enjoy your lunch!
