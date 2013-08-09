@@ -1,4 +1,8 @@
 lunchbox() {
+
+	# downloads latest stable build of WordPress
+	echo "downloading WordPress..."
+	
 	latest="http://wordpress.org/latest.zip"
 	curl -O $latest 
 	unzip latest.zip
@@ -7,6 +11,10 @@ lunchbox() {
 	rm -rf ./wordpress/ ./wp-content/plugins/hello.php ./readme.html
 	touch robots.txt
 
+	
+	# downloads monolith WordPress theme (https://github.com/bigspring/monolith)
+	echo "downloading monolith..."
+	
 	package="1.0-wip.zip"	
 	monolith="https://github.com/bigspring/monolith/archive/$package"
 	cd wp-content/themes
@@ -14,4 +22,9 @@ lunchbox() {
 	unzip 1.0-wip.zip
 	rm -rf $package
 	mv monolith-1.0-wip monolith
+	
+	
+	# script ends
+	echo "lunch is served!"
+	
 }
