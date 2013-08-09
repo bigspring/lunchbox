@@ -1,7 +1,5 @@
 lunchbox() {
 
-	# lunchbox v1.0.4
-	
 	# downloads latest stable build of WordPress
 	echo "packing WordPress..."
 	
@@ -27,6 +25,7 @@ lunchbox() {
 	
 	
 	# plugins
+	# ------------------------------------------------------------------	
 	echo="packing plugins…"
 	
 
@@ -51,6 +50,27 @@ lunchbox() {
 	unzip $package
 	rm -rf $package	
 	
+
+	# Force Regenrate Thumbnails
+	echo "packing Force Regenrate Thumbnails…"
+	
+	package="force-regenerate-thumbnails.latest-stable.zip"
+	url="http://downloads.wordpress.org/plugin/$package"
+	curl -LOk $url
+	unzip $package
+	rm -rf $package	
+
+
+	# Widget Logic
+	echo "packing Widget Logic…"
+	
+	package="widget-logic.latest-stable.zip"
+	url="http://downloads.wordpress.org/plugin/$package"
+	curl -LOk $url
+	unzip $package
+	rm -rf $package	
+
+
 	# script ends
 	echo "lunch is served!"
 	
