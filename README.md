@@ -5,7 +5,7 @@ A clever little bash script for Mac OS X that gets you up and running with WordP
 
 Suggestions? Ideas? Submit an issue!
 
-Made in Nottingham by the team @bigspringweb
+Built by the team at [BigSpring](http://twitter.com/bigspringweb). Installer and bash script by [Martin Dines](https://github.com/martindines).
 
 features
 --------
