@@ -20,7 +20,7 @@ lunchbox() {
 	#----------------------------------
 	echo "unpacking monolith..."
 	
-	package="1.0-wip.zip"	
+	package="master.zip"	
 	url="https://github.com/bigspring/monolith/archive/$package"
 	cd wp-content/themes
 	curl -LOk $url
