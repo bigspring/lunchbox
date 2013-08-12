@@ -36,7 +36,7 @@ bash < <(wget -O - https://raw.github.com/bigspring/lunchbox/master/lunchbox-ins
 or
 
 ```
-bash < <(curl -s https://raw.github.com/lunchbox/master/lunchbox-installer)
+bash < <(curl -s https://raw.github.com/bigspring/lunchbox/master/lunchbox-installer)
 ```
 
 ```
