@@ -1,6 +1,6 @@
 lunchbox() {
 
-	# lunchbox v1.0.1
+	# lunchbox v1.0.2
 	# built by @bigspringweb
 
 	# downloads latest stable build of WordPress

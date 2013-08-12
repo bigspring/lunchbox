@@ -41,5 +41,6 @@ usage
 changelog
 ------
 
+* 12/08/13 - v1.0.2 - updated monolith package to use master (v1.0)
 * 12/08/13 - v1.0.1 – added support for smush.it, contact form 7, better WP security
 * 08/08/13 - v1.0.0 – hello world!
