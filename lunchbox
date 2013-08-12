@@ -1,151 +1,148 @@
-lunchbox() {
+#!/usr/bin/env bash
+# lunchbox v1.0.2
+# built by @bigspringweb
 
-	# lunchbox v1.0.2
-	# built by @bigspringweb
+# downloads latest stable build of WordPress
+#----------------------------------
+echo "unpacking WordPress..."
 
-	# downloads latest stable build of WordPress
-	#----------------------------------
-	echo "unpacking WordPress..."
-	
-	latest="http://wordpress.org/latest.zip"
-	curl -O $latest 
-	unzip latest.zip
-	rm -rf __MACOSX latest.zip
-	cp -rf ./wordpress/* ./
-	rm -rf ./wordpress/ ./wp-content/plugins/hello.php ./readme.html
-	touch robots.txt
-
-	
-	# monolith WordPress theme (https://github.com/bigspring/monolith)
-	#----------------------------------
-	echo "unpacking monolith..."
-	
-	package="master.zip"	
-	url="https://github.com/bigspring/monolith/archive/$package"
-	cd wp-content/themes
-	curl -LOk $url
-	unzip $package
-	rm -rf $package
-	mv monolith-1.0-wip monolith
-	
-	
-	# plugins
-	echo="packing plugins…"
-	cd -
-	cd wp-content/plugins
-
-	
-	# YOAST WordPress SEO Plugin
-	#----------------------------------
-	echo "unpacking YOAST..."
-
-	package="wordpress-seo.latest-stable.zip"	
-	url="http://downloads.wordpress.org/plugin/$package"
-	curl -LOk $url
-	unzip $package
-	rm -rf $package
-
-	
-	# W3 Total cache
-	#----------------------------------
-	echo "unpacking W3 Total Cache…"
-	
-	package="w3-total-cache.latest-stable.zip"
-	url="http://downloads.wordpress.org/plugin/$package"
-	curl -LOk $url
-	unzip $package
-	rm -rf $package		
+latest="http://wordpress.org/latest.zip"
+curl -O $latest
+unzip latest.zip
+rm -rf __MACOSX latest.zip
+cp -rf ./wordpress/* ./
+rm -rf ./wordpress/ ./wp-content/plugins/hello.php ./readme.html
+touch robots.txt
 
 
-	# Force Regenrate Thumbnails
-	#----------------------------------
-	echo "unpacking Force Regenrate Thumbnails…"
-	
-	package="force-regenerate-thumbnails.latest-stable.zip"
-	url="http://downloads.wordpress.org/plugin/$package"
-	curl -LOk $url
-	unzip $package
-	rm -rf $package	
+# monolith WordPress theme (https://github.com/bigspring/monolith)
+#----------------------------------
+echo "unpacking monolith..."
+
+package="master.zip"
+url="https://github.com/bigspring/monolith/archive/$package"
+cd wp-content/themes
+curl -LOk $url
+unzip $package
+rm -rf $package
+mv monolith-1.0-wip monolith
 
 
-	# Widget Logic
-	#----------------------------------
-	echo "unpacking Widget Logic…"
-	
-	package="widget-logic.latest-stable.zip"
-	url="http://downloads.wordpress.org/plugin/$package"
-	curl -LOk $url
-	unzip $package
-	rm -rf $package	
+# plugins
+echo="packing plugins…"
+cd -
+cd wp-content/plugins
 
 
-	# Bulk Page Creator
-	#----------------------------------
-	echo "unpacking Bulk Page Creator…"
-	
-	package="bulk-page-creator.latest-stable.zip"
-	url="http://downloads.wordpress.org/plugin/$package"
-	curl -LOk $url
-	unzip $package
-	rm -rf $package	
+# YOAST WordPress SEO Plugin
+#----------------------------------
+echo "unpacking YOAST..."
 
-	
-	# NavXT
-	#----------------------------------
-	echo "unpacking Breadcrumb NavXT…"
-	
-	package="breadcrumb-navxt.latest-stable.zip"
-	url="http://downloads.wordpress.org/plugin/$package"
-	curl -LOk $url
-	unzip $package
-	rm -rf $package	
+package="wordpress-seo.latest-stable.zip"
+url="http://downloads.wordpress.org/plugin/$package"
+curl -LOk $url
+unzip $package
+rm -rf $package
 
 
-	# NavXT
-	#----------------------------------
-	echo "unpacking Advanced Text Widget…"
-	
-	package="advanced-text-widget.latest-stable.zip"
-	url="http://downloads.wordpress.org/plugin/$package"
-	curl -LOk $url
-	unzip $package
-	rm -rf $package	
+# W3 Total cache
+#----------------------------------
+echo "unpacking W3 Total Cache…"
+
+package="w3-total-cache.latest-stable.zip"
+url="http://downloads.wordpress.org/plugin/$package"
+curl -LOk $url
+unzip $package
+rm -rf $package
 
 
-	# WP Smush IT
-	#----------------------------------
-	echo "unpacking WP Smush.it…"
-	
-	package="smush-it.latest-stable.zip"
-	url="http://downloads.wordpress.org/plugin/$package"
-	curl -LOk $url
-	unzip $package
-	rm -rf $package	
+# Force Regenrate Thumbnails
+#----------------------------------
+echo "unpacking Force Regenrate Thumbnails…"
+
+package="force-regenerate-thumbnails.latest-stable.zip"
+url="http://downloads.wordpress.org/plugin/$package"
+curl -LOk $url
+unzip $package
+rm -rf $package
 
 
-	# Contact Form 7
-	#----------------------------------
-	echo "unpacking Contact Form 7…"
-	
-	package="contact-form-7.latest-stable.zip"
-	url="http://downloads.wordpress.org/plugin/$package"
-	curl -LOk $url
-	unzip $package
-	rm -rf $package	
+# Widget Logic
+#----------------------------------
+echo "unpacking Widget Logic…"
+
+package="widget-logic.latest-stable.zip"
+url="http://downloads.wordpress.org/plugin/$package"
+curl -LOk $url
+unzip $package
+rm -rf $package
 
 
-	# Better WP Security
-	#----------------------------------
-	echo "unpacking Better WP Security…"
-	
-	package="better-wp-security.latest-stable.zip"
-	url="http://downloads.wordpress.org/plugin/$package"
-	curl -LOk $url
-	unzip $package
-	rm -rf $package	
+# Bulk Page Creator
+#----------------------------------
+echo "unpacking Bulk Page Creator…"
 
-	# script ends
-	#----------------------------------
-	echo "lunch is served!"
-	
-}
+package="bulk-page-creator.latest-stable.zip"
+url="http://downloads.wordpress.org/plugin/$package"
+curl -LOk $url
+unzip $package
+rm -rf $package
+
+
+# NavXT
+#----------------------------------
+echo "unpacking Breadcrumb NavXT…"
+
+package="breadcrumb-navxt.latest-stable.zip"
+url="http://downloads.wordpress.org/plugin/$package"
+curl -LOk $url
+unzip $package
+rm -rf $package
+
+
+# NavXT
+#----------------------------------
+echo "unpacking Advanced Text Widget…"
+
+package="advanced-text-widget.latest-stable.zip"
+url="http://downloads.wordpress.org/plugin/$package"
+curl -LOk $url
+unzip $package
+rm -rf $package
+
+
+# WP Smush IT
+#----------------------------------
+echo "unpacking WP Smush.it…"
+
+package="smush-it.latest-stable.zip"
+url="http://downloads.wordpress.org/plugin/$package"
+curl -LOk $url
+unzip $package
+rm -rf $package
+
+
+# Contact Form 7
+#----------------------------------
+echo "unpacking Contact Form 7…"
+
+package="contact-form-7.latest-stable.zip"
+url="http://downloads.wordpress.org/plugin/$package"
+curl -LOk $url
+unzip $package
+rm -rf $package
+
+
+# Better WP Security
+#----------------------------------
+echo "unpacking Better WP Security…"
+
+package="better-wp-security.latest-stable.zip"
+url="http://downloads.wordpress.org/plugin/$package"
+curl -LOk $url
+unzip $package
+rm -rf $package
+
+# script ends
+#----------------------------------
+echo "lunch is served!"
