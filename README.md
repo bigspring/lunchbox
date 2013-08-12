@@ -21,6 +21,9 @@ Lunchbox will install the following things:
 * Bulk Page Creator
 * Breadcrumb NavXT
 * Advanced Text Widget
+* Contact Form 7
+* WP Smush.it
+* Better Wordpress Security
 
 
 installation
