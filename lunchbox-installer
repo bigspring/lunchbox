@@ -22,7 +22,7 @@ else
    exit 1
 fi
 
-$CMD $HOME/bin/lunchbox https://raw.github.com/martindines/lunchbox/develop/lunchbox
+$CMD $HOME/bin/lunchbox https://raw.github.com/bigspring/lunchbox/master/lunchbox
 
 chmod +x $HOME/bin/lunchbox
 

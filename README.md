@@ -30,13 +30,13 @@ installation
 ------------
 
 ```
-bash < <(wget -O - https://raw.github.com/martindines/lunchbox/develop/lunchbox-installer)
+bash < <(wget -O - https://raw.github.com/bigspring/lunchbox/master/lunchbox-installer)
 ```
 
 or
 
 ```
-bash < <(curl -s https://raw.github.com/martindines/lunchbox/develop/lunchbox-installer)
+bash < <(curl -s https://raw.github.com/lunchbox/lunchbox/master/lunchbox-installer)
 ```
 
 ```
@@ -56,6 +56,7 @@ usage
 changelog
 ------
 
+* 12/08/13 - v1.0.4 - updated path in readme and installation file
 * 12/08/13 - v1.0.3 - hassle free installation
 * 12/08/13 - v1.0.2 - updated monolith package to use master (v1.0)
 * 12/08/13 - v1.0.1 – added support for smush.it, contact form 7, better WP security
