@@ -29,7 +29,22 @@ Lunchbox will install the following things:
 installation
 ------------
 
-* copy the contents of 'lunchbox.txt' into your .bash_profile file (located in you /Users/[user] directory)
+```
+bash < <(wget -O - https://raw.github.com/martindines/lunchbox/develop/lunchbox-installer)
+```
+
+or
+
+```
+bash < <(curl -s https://raw.github.com/martindines/lunchbox/develop/lunchbox-installer)
+```
+
+```
+source ~/.profile
+```
+
+Note: Lunchbox is simply a bash script, so to use it you just need to place it in your $PATH and change it's mode to executable.
+
 
 usage
 ------
@@ -41,6 +56,7 @@ usage
 changelog
 ------
 
+* 12/08/13 - v1.0.3 - hassle free installation
 * 12/08/13 - v1.0.2 - updated monolith package to use master (v1.0)
 * 12/08/13 - v1.0.1 – added support for smush.it, contact form 7, better WP security
 * 08/08/13 - v1.0.0 – hello world!
