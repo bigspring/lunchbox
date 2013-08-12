@@ -1,8 +1,8 @@
 lunchbox() {
 
-	# lunchbox 1.0.0
+	# lunchbox 1.0.1
 	# built by @bigspringweb
-	
+
 	# downloads latest stable build of WordPress
 	#----------------------------------
 	echo "unpacking WordPress..."
@@ -31,6 +31,9 @@ lunchbox() {
 	
 	# plugins
 	echo="packing plugins…"
+	cd -
+	cd wp-content/plugins
+
 	
 	# YOAST WordPress SEO Plugin
 	#----------------------------------
@@ -38,8 +41,6 @@ lunchbox() {
 
 	package="wordpress-seo.latest-stable.zip"	
 	url="http://downloads.wordpress.org/plugin/$package"
-	cd -
-	cd wp-content/plugins
 	curl -LOk $url
 	unzip $package
 	rm -rf $package
@@ -56,7 +57,7 @@ lunchbox() {
 	rm -rf $package		
 
 
-	# Force Regenerate Thumbnails
+	# Force Regenrate Thumbnails
 	#----------------------------------
 	echo "unpacking Force Regenrate Thumbnails…"
 	
@@ -100,7 +101,7 @@ lunchbox() {
 	rm -rf $package	
 
 
-	# Advanced Text Widget
+	# NavXT
 	#----------------------------------
 	echo "unpacking Advanced Text Widget…"
 	
@@ -111,8 +112,40 @@ lunchbox() {
 	rm -rf $package	
 
 
+	# WP Smush IT
+	#----------------------------------
+	echo "unpacking WP Smush.it…"
+	
+	package="smush-it.latest-stable.zip"
+	url="http://downloads.wordpress.org/plugin/$package"
+	curl -LOk $url
+	unzip $package
+	rm -rf $package	
+
+
+	# Contact Form 7
+	#----------------------------------
+	echo "unpacking Contact Form 7…"
+	
+	package="contact-form-7.latest-stable.zip"
+	url="http://downloads.wordpress.org/plugin/$package"
+	curl -LOk $url
+	unzip $package
+	rm -rf $package	
+
+
+	# Better WP Security
+	#----------------------------------
+	echo "unpacking Better WP Security…"
+	
+	package="better-wp-security.latest-stable.zip"
+	url="http://downloads.wordpress.org/plugin/$package"
+	curl -LOk $url
+	unzip $package
+	rm -rf $package	
+
 	# script ends
 	#----------------------------------
-	echo "all done... lunch is served!"
+	echo "lunch is served!"
 	
 }

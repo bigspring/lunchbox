@@ -38,4 +38,5 @@ usage
 changelog
 ------
 
-* 1.0.0 – hello world!
+* 12/08/13 - 1.0.1 – added support for smush.it, contact form 7, better WP security
+* 08/08/13 - 1.0.0 – hello world!
