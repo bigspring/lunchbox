@@ -29,6 +29,8 @@ Lunchbox will install the following things:
 installation
 ------------
 
+First - run either of the following commands
+
 ```
 bash < <(wget -O - https://raw.github.com/bigspring/lunchbox/master/lunchbox-installer)
 ```
@@ -39,8 +41,10 @@ or
 bash < <(curl -s https://raw.github.com/bigspring/lunchbox/master/lunchbox-installer)
 ```
 
+Second - run the following (change to `.profile` if `.bash_profile` does not exist)
+
 ```
-source ~/.profile
+source ~/.bash_profile
 ```
 
 Note: Lunchbox is simply a bash script, so to use it you just need to place it in your $PATH and change it's mode to executable.
@@ -56,6 +60,7 @@ usage
 changelog
 ------
 
+* 12/08/13 - v1.0.5 - account for .bash_profile during installation
 * 12/08/13 - v1.0.4 - updated path in readme and installation file
 * 12/08/13 - v1.0.3 - hassle free installation
 * 12/08/13 - v1.0.2 - updated monolith package to use master (v1.0)
