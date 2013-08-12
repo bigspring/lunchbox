@@ -1,13 +1,24 @@
 #!/usr/bin/env bash
 
+# attempt to add $HOME/bin PATH to users .bash_profile (or .profile) if it is not already present
 if [ ! -d "$HOME/bin" ] ; then
     mkdir $HOME/bin
 
-    if [ -f $HOME/.profile ]; then
-        . $HOME/.profile
+    if [ -f $HOME/.bash_profile ]; then
+        . $HOME/.bash_profile
 
         if [[ ":$PATH:" != *":$HOME/bin:"* ]]; then
-            echo -e '\nPATH="$HOME/bin:$PATH"' >> $HOME/.profile
+            echo -e '\nPATH="$PATH:$HOME/bin"' >> $HOME/.bash_profile
+        fi
+    else
+        if [ -f $HOME/.profile ]; then
+            . $HOME/.profile
+        else
+            touch $HOME/.profile
+        fi
+
+        if [[ ":$PATH:" != *":$HOME/bin:"* ]]; then
+            echo -e '\nPATH="$PATH:$home/bin"' >> $HOME/.profile
         fi
     fi
 fi
