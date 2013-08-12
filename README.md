@@ -29,13 +29,13 @@ Lunchbox will install the following things:
 installation
 ------------
 
-* copy the contents of 'lunchbox.txt' into you .bash_profile file (located in you /Users/[user] directory)
+* copy the contents of 'lunchbox.txt' into your .bash_profile file (located in you /Users/[user] directory)
 
 usage
 ------
 
 * in command line, navigate to the folder into which you want to install your site (e.g. ~/htdocs/mysite)
-* run 'lunchbox' from command line
+* run 'lunchbox' from command line from within the target directory
 * wait for the lunchbox to unpack, and enjoy your lunch!
 
 changelog
