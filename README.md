@@ -29,7 +29,7 @@ Lunchbox will install the following things:
 installation
 ------------
 
-First - run either of the following commands
+Step 1 - run either of the following commands
 
 ```
 bash < <(wget -O - https://raw.github.com/bigspring/lunchbox/master/lunchbox-installer)
@@ -41,13 +41,13 @@ or
 bash < <(curl -s https://raw.github.com/bigspring/lunchbox/master/lunchbox-installer)
 ```
 
-Second - run the following (change to `.profile` if `.bash_profile` does not exist)
+Step 2 - run the following (change to `.profile` if `.bash_profile` does not exist)
 
 ```
 source ~/.bash_profile
 ```
 
-Note: Lunchbox is simply a bash script, so to use it you just need to place it in your $PATH and change it's mode to executable.
+Note: Lunchbox is simply a bash script, so to use it you just need to place it in your $PATH and change its mode to executable.
 
 
 usage
