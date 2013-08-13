@@ -42,7 +42,7 @@ run ()
 
 self_update()
 {
-    echo -n 'Downloading and installing latest version...'
+    echo "Downloading latest version..."
     if hash curl 2>&- ; then
         CMD="curl -s -o $script.tmp"
     elif hash wget 2>&- ; then
@@ -55,6 +55,8 @@ self_update()
     $CMD $lunchbox_master
     chmod +x $script.tmp
 
+    echo "Download complete"
+
     cat > lunchbox-update << EOF
 #!/usr/bin/env bash
 if mv $script.tmp $script_dir/$script; then
@@ -65,13 +67,13 @@ else
 fi
 EOF
 
-    exec /bin/bash lunchbox-update
+    exec /bin/bash lunchbox-update && rm lunchbox-update
 }
 
 action=$1; shift
 
 if [ "$action" = "run" ]; then
-    echo 'initiating'
+    run
 elif [ "$action" = "self-update" ]; then
     self_update
 elif [ "$action" = "--help" -o "$action" = "-h" -o "$action" = "" ]; then
