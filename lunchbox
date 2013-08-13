@@ -25,7 +25,7 @@ cd wp-content/themes
 curl -LOk $url
 unzip $package
 rm -rf $package
-mv mnolith-master monolith
+mv monolith-master monolith
 
 
 # plugins
