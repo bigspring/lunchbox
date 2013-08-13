@@ -31,7 +31,7 @@
 version="1.1.0"
 script=${0##*/}
 script_dir=$(dirname $0)
-lunchbox_master="https://raw.github.com/martindines/lunchbox/feature/interface/lunchbox"
+lunchbox_master="https://raw.github.com/bigspring/lunchbox/master/lunchbox"
 
 help="\
 Lunchbox v$version
