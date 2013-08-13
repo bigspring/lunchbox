@@ -60,6 +60,7 @@ usage
 changelog
 ------
 
+* 13/08/13 - v1.0.6 - update readme, some 
 * 12/08/13 - v1.0.5 - account for .bash_profile during installation
 * 12/08/13 - v1.0.4 - updated path in readme and installation file
 * 12/08/13 - v1.0.3 - hassle free installation

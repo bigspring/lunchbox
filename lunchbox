@@ -4,7 +4,7 @@
 
 # downloads latest stable build of WordPress
 #----------------------------------
-echo "unpacking WordPress..."
+echo "unpacking latest stable build of WordPress..."
 
 latest="http://wordpress.org/latest.zip"
 curl -O $latest
@@ -25,7 +25,7 @@ cd wp-content/themes
 curl -LOk $url
 unzip $package
 rm -rf $package
-mv monolith-1.0-wip monolith
+mv mnolith-master monolith
 
 
 # plugins
