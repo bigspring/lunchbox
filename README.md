@@ -7,12 +7,12 @@ Suggestions? Ideas? Submit an issue!
 
 Built by the team at [BigSpring](https://github.com/bigspring). Installer by [Martin Dines](https://github.com/martindines).
 
-For project updates follow (@juliotaylor)[http://twitter.com/juliotaylor] or (@bigspringweb)[http://twitter.com/bigspringweb].
+For project updates follow [@juliotaylor](http://twitter.com/juliotaylor) or [@bigspringweb](http://twitter.com/bigspringweb).
 
 features
 --------
 
-Lunchbox will install the following things:
+Lunchbox will install the following packages:
 
 * WordPress (latest stable build)
 * monolith WordPress starter theme (https://github.com/bigspring/monolith)
@@ -59,7 +59,7 @@ usage
 ------
 
 * in command line, navigate to the folder into which you want to install your site (e.g. ~/htdocs/mysite)
-* run 'lunchbox' from command line from within the target directory
+* run `lunchbox` from command line from within the target directory
 * wait for the lunchbox to unpack, and enjoy your lunch!
 
 
