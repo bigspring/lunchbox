@@ -232,7 +232,7 @@ self_update()
 if mv $script.tmp $script_dir/$script; then
     echo "Update successful"
     rm \$0
-    echo -e "Lunchbox version " && sed -n "s/version=\"\(.*\)\"$/\1/p" $script_dir/$script
+    echo -n "Lunchbox version " && sed -n "s/version=\"\(.*\)\"$/\1/p" $script_dir/$script
 else
     echo "Update failed"
 fi
