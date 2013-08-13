@@ -53,13 +53,13 @@ self_update()
     fi
 
     $CMD $lunchbox_master
-    chmod -x $script.tmp
+    chmod +x $script.tmp
 
     cat > lunchbox-update << EOF
 #!/usr/bin/env bash
 if mv $script.tmp $script_dir/$script; then
     echo "Update successful"
-    rm \$script
+    rm $script.tmp
 else
     echo "Update failed"
 fi
