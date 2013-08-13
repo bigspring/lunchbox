@@ -60,7 +60,7 @@ usage
 changelog
 ------
 
-* 13/08/13 - v1.0,7 - added support for WP Password Generator
+* 13/08/13 - v1.0.7 - added support for WP Password Generator
 * 13/08/13 - v1.0.6 - update readme, updated monolith package handling
 * 12/08/13 - v1.0.5 - account for .bash_profile during installation
 * 12/08/13 - v1.0.4 - updated path in readme and installation file
