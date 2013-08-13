@@ -1,160 +1,81 @@
 #!/usr/bin/env bash
-# lunchbox v1.0.7
-# built by @bigspringweb
 
-# downloads latest stable build of WordPress
-#----------------------------------
-echo "unpacking latest stable build of WordPress..."
+version="1.0.0"
+script=${0##*/}
+script_dir=$(dirname $0)
+lunchbox_master="https://raw.github.com/martindines/lunchbox/feature/interface/lunchbox"
 
-latest="http://wordpress.org/latest.zip"
-curl -O $latest
-unzip latest.zip
-rm -rf __MACOSX latest.zip
-cp -rf ./wordpress/* ./
-rm -rf ./wordpress/ ./wp-content/plugins/hello.php ./readme.html
-touch robots.txt
+help="\
+Lunchbox v$version
+    A clever little bash script that gets you up and running with WordPress and essential plugins in a few seconds. Automatically downloads WordPress and an essential arsenal of plugins.
 
+Features:
+    Lunchbox will install the following
+---------------------------------------------
+    WordPress (latest stable build)
+    monolith WordPress starter theme (https://github.com/bigspring/monolith)
+    YOAST WordPress SEO Plugin
+    W3 Total Cache
+    Force Regenerate Thumbnails
+    Widget Logic
+    Bulk Page Creator
+    Breadcrumb NavXT
+    Advanced Text Widget
+    Contact Form 7
+    WP Smush.it
+    Better WordPress Security
+    WP Password Generator
 
-# monolith WordPress theme (https://github.com/bigspring/monolith)
-#----------------------------------
-echo "unpacking monolith..."
+Commands:
+    $script command
+---------------------------------------------
+    run          Let Lunchbox work its magic!
+    self-update  Update Lunchbox
+    --help       Display usage information
+    --version    Get current version
+"
 
-package="master.zip"
-url="https://github.com/bigspring/monolith/archive/$package"
-cd wp-content/themes
-curl -LOk $url
-unzip $package
-rm -rf $package
-mv monolith-master monolith
+run ()
+{
+  echo 'lunchbox existing code here'
+}
 
+self_update()
+{
+    echo -n 'Downloading and installing latest version...'
+    if hash curl 2>&- ; then
+        CMD="curl -s -o $script.tmp"
+    elif hash wget 2>&- ; then
+        CMD="wget -q -O --output-document=\"$script.tmp\""
+    else
+        echo "You need to have curl or wget installed."
+        exit 1
+    fi
 
-# plugins
-echo="packing plugins…"
-cd -
-cd wp-content/plugins
+    $CMD $lunchbox_master
+    chmod -x $script.tmp
 
+    cat > lunchbox-update << EOF
+#!/usr/bin/env bash
+if mv $script.tmp $script_dir/$script; then
+    echo "Update successful"
+    rm \$script
+else
+    echo "Update failed"
+fi
+EOF
 
-# YOAST WordPress SEO Plugin
-#----------------------------------
-echo "unpacking YOAST..."
+    exec /bin/bash lunchbox-update
+}
 
-package="wordpress-seo.latest-stable.zip"
-url="http://downloads.wordpress.org/plugin/$package"
-curl -LOk $url
-unzip $package
-rm -rf $package
+action=$1; shift
 
-
-# W3 Total cache
-#----------------------------------
-echo "unpacking W3 Total Cache…"
-
-package="w3-total-cache.latest-stable.zip"
-url="http://downloads.wordpress.org/plugin/$package"
-curl -LOk $url
-unzip $package
-rm -rf $package
-
-
-# Force Regenrate Thumbnails
-#----------------------------------
-echo "unpacking Force Regenrate Thumbnails…"
-
-package="force-regenerate-thumbnails.latest-stable.zip"
-url="http://downloads.wordpress.org/plugin/$package"
-curl -LOk $url
-unzip $package
-rm -rf $package
-
-
-# Widget Logic
-#----------------------------------
-echo "unpacking Widget Logic…"
-
-package="widget-logic.latest-stable.zip"
-url="http://downloads.wordpress.org/plugin/$package"
-curl -LOk $url
-unzip $package
-rm -rf $package
-
-
-# Bulk Page Creator
-#----------------------------------
-echo "unpacking Bulk Page Creator…"
-
-package="bulk-page-creator.latest-stable.zip"
-url="http://downloads.wordpress.org/plugin/$package"
-curl -LOk $url
-unzip $package
-rm -rf $package
-
-
-# NavXT
-#----------------------------------
-echo "unpacking Breadcrumb NavXT…"
-
-package="breadcrumb-navxt.latest-stable.zip"
-url="http://downloads.wordpress.org/plugin/$package"
-curl -LOk $url
-unzip $package
-rm -rf $package
-
-
-# NavXT
-#----------------------------------
-echo "unpacking Advanced Text Widget…"
-
-package="advanced-text-widget.latest-stable.zip"
-url="http://downloads.wordpress.org/plugin/$package"
-curl -LOk $url
-unzip $package
-rm -rf $package
-
-
-# WP Smush IT
-#----------------------------------
-echo "unpacking WP Smush.it…"
-
-package="smush-it.latest-stable.zip"
-url="http://downloads.wordpress.org/plugin/$package"
-curl -LOk $url
-unzip $package
-rm -rf $package
-
-
-# Contact Form 7
-#----------------------------------
-echo "unpacking Contact Form 7…"
-
-package="contact-form-7.latest-stable.zip"
-url="http://downloads.wordpress.org/plugin/$package"
-curl -LOk $url
-unzip $package
-rm -rf $package
-
-
-# Better WP Security
-#----------------------------------
-echo "unpacking Better WP Security…"
-
-package="better-wp-security.latest-stable.zip"
-url="http://downloads.wordpress.org/plugin/$package"
-curl -LOk $url
-unzip $package
-rm -rf $package
-
-
-# WP Password Generator
-#----------------------------------
-echo "unpacking WP Password Generator…"
-
-package="wp-password-generator.latest-stable.zip"
-url="http://downloads.wordpress.org/plugin/$package"
-curl -LOk $url
-unzip $package
-rm -rf $package
-
-
-# script ends
-#----------------------------------
-echo "lunch is served!"
+if [ "$action" = "run" ]; then
+    echo 'initiating'
+elif [ "$action" = "self-update" ]; then
+    self_update
+elif [ "$action" = "--help" -o "$action" = "-h" -o "$action" = "" ]; then
+    echo -e "$help"
+elif [ "$action" = "--version" -o "$action" = "-v" ]; then
+    echo -e "Lunchbox version $version"
+fi
