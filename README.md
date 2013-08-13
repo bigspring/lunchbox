@@ -58,6 +58,13 @@ usage
 * run 'lunchbox' from command line from within the target directory
 * wait for the lunchbox to unpack, and enjoy your lunch!
 
+
+achtung! danger!
+------
+
+we strongly advise you to take a look at the source before you run anything to make sure it does what you need. lunchbox comes with no warranty whatsoever, so use at your own risk!
+
+
 changelog
 ------
 
