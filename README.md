@@ -58,7 +58,7 @@ Note: Lunchbox is simply a bash script, so to use it you just need to place it i
 usage
 ------
 
-## Commands
+After installation the following commands will be available
 
 ```
 lunchbox run          Installs WordPress and packages inside the current directory
@@ -71,7 +71,7 @@ lunchbox --version    Get current version
 achtung! danger!
 ------
 
-we strongly advise you to take a look at the source before you run anything to make sure it does what you need. lunchbox comes with no warranty whatsoever, so use at your own risk!
+We strongly advise you to take a look at the source before you run anything to make sure it does what you need. lunchbox comes with no warranty whatsoever, so use at your own risk!
 
 
 changelog
