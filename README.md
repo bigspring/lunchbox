@@ -5,7 +5,7 @@ A clever little bash script for Mac OS X that gets you up and running with WordP
 
 Suggestions? Ideas? Submit an issue!
 
-Built by the team at [BigSpring](https://github.com/bigspring). Installer by [Martin Dines](https://github.com/martindines).
+Built by the team at [BigSpring](https://github.com/bigspring). Installer & command interface by [Martin Dines](https://github.com/martindines).
 
 For project updates follow [@juliotaylor](http://twitter.com/juliotaylor) or [@bigspringweb](http://twitter.com/bigspringweb).
 
@@ -28,7 +28,7 @@ Lunchbox will install the following packages:
 * Better Wordpress Security
 * WP Password Generator
 
-If you'd like to request a plugin or feature, [create a new issue](https://github.com/bigspring/lunchbox/issues)
+If you'd like to request a plugin or feature, [create a new issue](https://github.com/bigspring/lunchbox/issues).
 
 
 installation
@@ -58,9 +58,14 @@ Note: Lunchbox is simply a bash script, so to use it you just need to place it i
 usage
 ------
 
-* in command line, navigate to the folder into which you want to install your site (e.g. ~/htdocs/mysite)
-* run `lunchbox` from command line from within the target directory
-* wait for the lunchbox to unpack, and enjoy your lunch!
+## Commands
+
+```
+lunchbox run          Installs WordPress and packages inside the current directory
+lunchbox self-update  Update Lunchbox
+lunchbox --help       Display usage information
+lunchbox --version    Get current version
+```
 
 
 achtung! danger!
@@ -72,6 +77,7 @@ we strongly advise you to take a look at the source before you run anything to m
 changelog
 ------
 
+* 14/08/13 - v1.1.0 - new command interface, with self-update and various other methods
 * 13/08/13 - v1.0.7 - added support for WP Password Generator
 * 13/08/13 - v1.0.6 - update readme, updated monolith package handling
 * 12/08/13 - v1.0.5 - account for .bash_profile during installation
