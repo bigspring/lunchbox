@@ -24,6 +24,7 @@ Lunchbox will install the following things:
 * Contact Form 7
 * WP Smush.it
 * Better Wordpress Security
+* WP Password Generator
 
 
 installation
