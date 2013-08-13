@@ -28,6 +28,8 @@ Lunchbox will install the following things:
 * Better Wordpress Security
 * WP Password Generator
 
+If you'd like to request a plugin or feature, [create a new issue](https://github.com/bigspring/lunchbox/issues)
+
 
 installation
 ------------
