@@ -1,0 +1,55 @@
+{
+    "name" : "bigspring/lunchbox",
+    "description" : "BigSpring Wordpress project builder",
+    "authors" : [
+        {
+            "name" : "Dave Seaton",
+            "email" : "dave@bigspring.co.uk",
+            "homepage" : "http://www.bigspring.co.uk/"
+        }
+    ],
+    "type" : "project",
+    "repositories": [
+        {
+            "type" : "composer",
+            "url" : "http://wpackagist.org"
+        },
+        {
+            "type" : "package",
+            "package" : {
+                "name" : "wordpress",
+                "version" : "4",
+                "type" : "webroot",
+                "dist" : {
+                    "type" : "zip",
+                    "url" : "https://wordpress.org/latest.zip"
+                },
+                "require" : {
+                  "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/bigspring/monolith"
+        }
+    ],
+    "minimum-stability" : "dev",
+    "require" : {
+        "php" : ">=5.3.2",
+        "wordpress" : "~4.0",
+        "fancyguy/webroot-installer" : "1.0.0",
+        "composer/installers" : "~1.0",
+        "bigspring/monolith" : "dev-master",
+        "wpackagist-plugin/wordpress-seo" : "*"
+    },
+    "extra" : {
+        "installer-paths": {
+            "wp/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "wp/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wp/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "webroot-dir": "wp",
+        "webroot-package": "wordpress"
+    }
+}
