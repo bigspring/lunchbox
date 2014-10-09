@@ -45,9 +45,9 @@
     },
     "extra" : {
         "installer-paths": {
-            "wp/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-            "wp/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-            "wp/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+            "LUNCHBOX_DIR/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "LUNCHBOX_DIR/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "LUNCHBOX_DIR/wp-content/themes/{$name}/": ["type:wordpress-theme"]
         },
         "webroot-dir": "LUNCHBOX_DIR",
         "webroot-package": "wordpress"
