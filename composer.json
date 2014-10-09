@@ -41,7 +41,17 @@
         "fancyguy/webroot-installer" : "1.0.0",
         "composer/installers" : "~1.0",
         "bigspring/monolith" : "dev-master",
-        "wpackagist-plugin/wordpress-seo" : "*"
+        "wpackagist-plugin/wordpress-seo" : "*",
+        "wpackagist-plugin/w3-total-cache" : "*",
+        "wpackagist-plugin/force-regenerate-thumbnails" : "*",
+        "wpackagist-plugin/widget-logic" : "*",
+        "wpackagist-plugin/bulk-page-creator" : "*",
+        "wpackagist-plugin/breadcrumb-navxt" : "*",
+        "wpackagist-plugin/advanced-text-widget" : "*",
+        "wpackagist-plugin/smush-it" : "*",
+        "wpackagist-plugin/contact-form-7" : "*",
+        "wpackagist-plugin/better-wp-security" : "*",
+        "wpackagist-plugin/wp-password-generator" : "*"
     },
     "extra" : {
         "installer-paths": {
