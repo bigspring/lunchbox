@@ -49,7 +49,7 @@
             "wp/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "wp/wp-content/themes/{$name}/": ["type:wordpress-theme"]
         },
-        "webroot-dir": "wp",
+        "webroot-dir": "LUNCHBOX_DIR",
         "webroot-package": "wordpress"
     }
 }
