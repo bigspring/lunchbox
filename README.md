@@ -1,7 +1,7 @@
 Lunchbox
 ========
 
-A clever little script for Mac OS X that gets you up and running with WordPress and essential plugins in a few seconds. Automatically downloads WordPress and an essential arsenal of plugins (listed below).
+A composer config file that can get you up and running with WordPress and essential plugins in a few seconds. Automatically downloads WordPress and an essential arsenal of plugins (listed below).
 
 Suggestions? Ideas? Submit an issue!
 
