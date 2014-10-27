@@ -30,19 +30,10 @@ Lunchbox will install the following packages:
 
 If you'd like to request a plugin or feature, [create a new issue](https://github.com/bigspring/lunchbox/issues).
 
-
-installation
-------------
-
-Please use the companion installer/project tool [Munch](https://github.com/bigspring/munch) as this will handle the process automatically.
-
-Note: Lunchbox is simply a Python script, so to use it you just need to place it in your $PATH and change its mode to executable.
-
-
 usage
 ------
 
-It is recommended that you use the companion installer/project tool [Munch](https://github.com/bigspring/munch), although you can install by placing composer.json in your webprojects root and running:
+It is recommended that you use the companion installer/project tool [Munch](https://github.com/bigspring/munch), although you can also install by placing composer.json in your webprojects root and running:
 
 ```
 composer install
