@@ -1,11 +1,11 @@
 Lunchbox
 ========
 
-A clever little bash script for Mac OS X that gets you up and running with WordPress and essential plugins in a few seconds. Automatically downloads WordPress and an essential arsenal of plugins (listed below).
+A clever little script for Mac OS X that gets you up and running with WordPress and essential plugins in a few seconds. Automatically downloads WordPress and an essential arsenal of plugins (listed below).
 
 Suggestions? Ideas? Submit an issue!
 
-Built by the team at [BigSpring](https://github.com/bigspring). Installer & command interface by [Martin Dines](https://github.com/martindines).
+Built by the team at [BigSpring](https://github.com/bigspring). Composer config and companion installer [Munch](https://github.com/bigspring/munch) by [DM Seaton](https://github.com/dmseaton).
 
 For project updates follow [@juliotaylor](http://twitter.com/juliotaylor) or [@bigspringweb](http://twitter.com/bigspringweb).
 
@@ -15,7 +15,7 @@ features
 Lunchbox will install the following packages:
 
 * WordPress (latest stable build)
-* monolith WordPress starter theme (https://github.com/bigspring/monolith)
+* Monolith WordPress starter theme (https://github.com/bigspring/monolith)
 * YOAST WordPress SEO Plugin
 * W3 Total Cache
 * Force Regenrate Thumbnails
@@ -34,44 +34,27 @@ If you'd like to request a plugin or feature, [create a new issue](https://githu
 installation
 ------------
 
-Step 1 - run either of the following commands
+Please use the companion installer/project tool [Munch](https://github.com/bigspring/munch) as this will handle the process automatically.
 
-```
-bash < <(wget -O - https://raw.github.com/bigspring/lunchbox/master/lunchbox-installer)
-```
-
-or
-
-```
-bash < <(curl -s https://raw.github.com/bigspring/lunchbox/master/lunchbox-installer)
-```
-
-Step 2 - run the following (change to `.profile` if `.bash_profile` does not exist)
-
-```
-source ~/.bash_profile
-```
-
-Note: Lunchbox is simply a bash script, so to use it you just need to place it in your $PATH and change its mode to executable.
+Note: Lunchbox is simply a Python script, so to use it you just need to place it in your $PATH and change its mode to executable.
 
 
 usage
 ------
 
-After installation the following commands will be available
+It is recommended that you use the companion installer/project tool [Munch](https://github.com/bigspring/munch), although you can install by placing composer.json in your webprojects root and running:
 
 ```
-lunchbox run          Installs WordPress and packages inside the current directory
-lunchbox self-update  Update Lunchbox
-lunchbox --help       Display usage information
-lunchbox --version    Get current version
+composer install
 ```
+
+However, this will result in leftover Composer files.
 
 
 achtung! danger!
 ------
 
-We strongly advise you to take a look at the source before you run anything to make sure it does what you need. lunchbox comes with no warranty whatsoever, so use at your own risk!
+We strongly advise you to take a look at the source before you run anything to make sure it does what you need. Lunchbox comes with no warranty whatsoever, so use at your own risk!
 
 
 changelog

@@ -1,6 +1,7 @@
 {
     "name" : "bigspring/lunchbox",
-    "description" : "BigSpring Wordpress project builder",
+    "description" : "BigSpring Wordpress (plus dependencies) project builder",
+    "license": "MIT",
     "authors" : [
         {
             "name" : "Dave Seaton",
