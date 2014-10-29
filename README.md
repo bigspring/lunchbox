@@ -51,6 +51,7 @@ We strongly advise you to take a look at the source before you run anything to m
 changelog
 ------
 
+* 09/10/14 - v2.0.0 - refactored full process to utilise composer
 * 14/08/13 - v1.1.0 - new command interface, with self-update and various other methods
 * 13/08/13 - v1.0.7 - added support for WP Password Generator
 * 13/08/13 - v1.0.6 - update readme, updated monolith package handling
