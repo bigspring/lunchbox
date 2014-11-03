@@ -31,8 +31,16 @@
             }
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/bigspring/monolith"
+            "type" : "package",
+            "package" : {
+                "name" : "bigspring/monolith",
+                "version" : "1.6.0",
+                "type" : "wordpress-plugin",
+                "dist" : {
+                    "type" : "zip",
+                    "url" : "https://github.com/bigspring/monolith/archive/master.zip"
+                }
+            }
         }
     ],
     "minimum-stability" : "dev",
