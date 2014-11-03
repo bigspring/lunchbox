@@ -32,7 +32,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/igorw/monolog"
+            "url": "https://github.com/bigspring/monolith"
         }
     ],
     "minimum-stability" : "dev",
