@@ -34,8 +34,8 @@
             "type" : "package",
             "package" : {
                 "name" : "bigspring/monolith",
-                "version" : "1.6.0",
-                "type" : "wordpress-plugin",
+                "version" : "master",
+                "type" : "wordpress-theme",
                 "dist" : {
                     "type" : "zip",
                     "url" : "https://github.com/bigspring/monolith/archive/master.zip"
@@ -49,7 +49,7 @@
         "wordpress" : "~4.0",
         "fancyguy/webroot-installer" : "1.0.0",
         "composer/installers" : "~1.0",
-        "bigspring/monolith" : "dev-master",
+        "bigspring/monolith" : "*",
         "wpackagist-plugin/wordpress-seo" : "*",
         "wpackagist-plugin/w3-total-cache" : "*",
         "wpackagist-plugin/force-regenerate-thumbnails" : "*",
