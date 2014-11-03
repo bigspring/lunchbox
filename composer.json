@@ -31,8 +31,8 @@
             }
         },
         {
-            "type": "git",
-            "url": "https://github.com/bigspring/monolith"
+            "type": "vcs",
+            "url": "https://github.com/igorw/monolog"
         }
     ],
     "minimum-stability" : "dev",
@@ -41,7 +41,7 @@
         "wordpress" : "~4.0",
         "fancyguy/webroot-installer" : "1.0.0",
         "composer/installers" : "~1.0",
-        "bigspring/monolith" : "master",
+        "bigspring/monolith" : "dev-master",
         "wpackagist-plugin/wordpress-seo" : "*",
         "wpackagist-plugin/w3-total-cache" : "*",
         "wpackagist-plugin/force-regenerate-thumbnails" : "*",
