@@ -50,6 +50,7 @@
         "fancyguy/webroot-installer" : "1.0.0",
         "composer/installers" : "~1.0",
         "bigspring/monolith" : "*",
+        "bigspring/shard-test" : "*",
         "wpackagist-plugin/wordpress-seo" : "*",
         "wpackagist-plugin/w3-total-cache" : "*",
         "wpackagist-plugin/force-regenerate-thumbnails" : "*",
