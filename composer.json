@@ -41,6 +41,10 @@
                     "url" : "https://github.com/bigspring/monolith/archive/master.zip"
                 }
             }
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/bigspring/shard-test"
         }
     ],
     "minimum-stability" : "dev",
