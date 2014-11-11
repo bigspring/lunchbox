@@ -43,8 +43,15 @@
             }
         },
         {
-            "type": "git",
-            "url": "https://github.com/bigspring/shard-test"
+            "type" : "package",
+            "package" : {
+                "name" : "bigspring/shard-test",
+                "version" : "master",
+                "dist" : {
+                    "type" : "zip",
+                    "url" : "https://github.com/bigspring/shard-test/archive/master.zip"
+                }
+            }
         }
     ],
     "minimum-stability" : "dev",
