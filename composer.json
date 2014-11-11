@@ -72,7 +72,7 @@
             "LUNCHBOX_DIR/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
             "LUNCHBOX_DIR/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "LUNCHBOX_DIR/wp-content/themes/{$name}/": ["type:wordpress-theme"],
-            "LUNCHBOX_DIR/wp-content/themes/monolith/shards/{$name}/": ["type:monolith-shard"]
+            "LUNCHBOX_DIR/wp-content/themes/monolith/shards/{$name}/": ["bigspring/shard-test"]
         },
         "webroot-dir": "LUNCHBOX_DIR",
         "webroot-package": "wordpress"
