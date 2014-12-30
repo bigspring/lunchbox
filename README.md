@@ -5,7 +5,7 @@ A composer config file that can get you up and running with WordPress and essent
 
 Suggestions? Ideas? Submit an issue!
 
-Built by the team at [BigSpring](https://github.com/bigspring). Composer config and companion installer [Munch](https://github.com/bigspring/munch) by [DM Seaton](https://github.com/dmseaton).
+Built by the team at [BigSpring](https://github.com/bigspring).
 
 For project updates follow [@juliotaylor](http://twitter.com/juliotaylor) or [@bigspringweb](http://twitter.com/bigspringweb).
 

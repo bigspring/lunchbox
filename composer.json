@@ -64,7 +64,6 @@
     },
     "extra" : {
         "installer-paths": {
-            "LUNCHBOX_DIR/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
             "LUNCHBOX_DIR/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "LUNCHBOX_DIR/wp-content/themes/{$name}/": ["type:wordpress-theme"]
         },
