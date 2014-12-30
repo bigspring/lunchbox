@@ -41,17 +41,6 @@
                     "url" : "https://github.com/bigspring/monolith/archive/master.zip"
                 }
             }
-        },
-        {
-            "type" : "package",
-            "package" : {
-                "name" : "bigspring/shard-test",
-                "version" : "master",
-                "dist" : {
-                    "type" : "zip",
-                    "url" : "https://github.com/bigspring/shard-test/archive/master.zip"
-                }
-            }
         }
     ],
     "minimum-stability" : "dev",
@@ -60,9 +49,7 @@
         "wordpress" : "~4.0",
         "fancyguy/webroot-installer" : "1.0.0",
         "composer/installers" : "~1.0",
-        "mnsami/composer-custom-directory-installer": "1.0.*",
         "bigspring/monolith" : "*",
-        "bigspring/shard-test" : "*",
         "wpackagist-plugin/wordpress-seo" : "*",
         "wpackagist-plugin/w3-total-cache" : "*",
         "wpackagist-plugin/force-regenerate-thumbnails" : "*",
@@ -77,10 +64,8 @@
     },
     "extra" : {
         "installer-paths": {
-            "LUNCHBOX_DIR/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
             "LUNCHBOX_DIR/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-            "LUNCHBOX_DIR/wp-content/themes/{$name}/": ["type:wordpress-theme"],
-            "LUNCHBOX_DIR/wp-content/themes/monolith/shards/shard-test/": ["bigspring/shard-test"]
+            "LUNCHBOX_DIR/wp-content/themes/{$name}/": ["type:wordpress-theme"]
         },
         "webroot-dir": "LUNCHBOX_DIR",
         "webroot-package": "wordpress"
