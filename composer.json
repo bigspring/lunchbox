@@ -34,11 +34,11 @@
             "type" : "package",
             "package" : {
                 "name" : "bigspring/monolith",
-                "version" : "master",
+                "version" : "2.0",
                 "type" : "wordpress-theme",
                 "dist" : {
                     "type" : "zip",
-                    "url" : "https://github.com/bigspring/monolith/archive/master.zip"
+                    "url" : "https://github.com/bigspring/monolith/archive/2.0.zip"
                 }
             }
         }
