@@ -1,6 +1,6 @@
 {
     "name" : "bigspring/lunchbox",
-    "description" : "BigSpring Wordpress (plus dependencies) project builder",
+    "description" : "Wordpress, Monolith and dependencies project builder",
     "license": "MIT",
     "authors" : [
         {
@@ -19,7 +19,7 @@
             "type" : "package",
             "package" : {
                 "name" : "wordpress",
-                "version" : "4",
+                "version" : "4.1.1",
                 "type" : "webroot",
                 "dist" : {
                     "type" : "zip",
@@ -34,7 +34,7 @@
             "type" : "package",
             "package" : {
                 "name" : "bigspring/monolith",
-                "version" : "master",
+                "version" : "2.0",
                 "type" : "wordpress-theme",
                 "dist" : {
                     "type" : "zip",
@@ -46,7 +46,7 @@
     "minimum-stability" : "dev",
     "require" : {
         "php" : ">=5.3.2",
-        "wordpress" : "~4.0",
+        "wordpress" : "4.*",
         "fancyguy/webroot-installer" : "1.0.0",
         "composer/installers" : "~1.0",
         "bigspring/monolith" : "*",
@@ -57,14 +57,13 @@
         "wpackagist-plugin/bulk-page-creator" : "*",
         "wpackagist-plugin/breadcrumb-navxt" : "*",
         "wpackagist-plugin/advanced-text-widget" : "*",
-        "wpackagist-plugin/wp-smushit" : "*",
+        "wpackagist-plugin/imsanity" : "*",
         "wpackagist-plugin/contact-form-7" : "*",
         "wpackagist-plugin/better-wp-security" : "*",
         "wpackagist-plugin/wp-password-generator" : "*"
     },
     "extra" : {
         "installer-paths": {
-            "LUNCHBOX_DIR/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
             "LUNCHBOX_DIR/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "LUNCHBOX_DIR/wp-content/themes/{$name}/": ["type:wordpress-theme"]
         },
