@@ -57,7 +57,7 @@
         "wpackagist-plugin/bulk-page-creator" : "*",
         "wpackagist-plugin/breadcrumb-navxt" : "*",
         "wpackagist-plugin/advanced-text-widget" : "*",
-        "wpackagist-plugin/wp-smushit" : "*",
+        "wpackagist-plugin/imsanity" : "*",
         "wpackagist-plugin/contact-form-7" : "*",
         "wpackagist-plugin/better-wp-security" : "*",
         "wpackagist-plugin/wp-password-generator" : "*"
