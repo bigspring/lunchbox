@@ -24,7 +24,7 @@ Lunchbox will install the following packages:
 * Breadcrumb NavXT
 * Advanced Text Widget
 * Contact Form 7
-* WP Smush.it
+* Imsanity
 * Better Wordpress Security
 * WP Password Generator
 
