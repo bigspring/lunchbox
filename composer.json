@@ -1,6 +1,6 @@
 {
     "name" : "bigspring/lunchbox",
-    "description" : "BigSpring Wordpress (plus dependencies) project builder",
+    "description" : "Wordpress, Monolith and dependencies project builder",
     "license": "MIT",
     "authors" : [
         {
@@ -38,7 +38,7 @@
                 "type" : "wordpress-theme",
                 "dist" : {
                     "type" : "zip",
-                    "url" : "https://github.com/bigspring/monolith/archive/develop.zip"
+                    "url" : "https://github.com/bigspring/monolith/archive/master.zip"
                 }
             }
         }
