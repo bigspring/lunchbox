@@ -38,7 +38,7 @@
                 "type" : "wordpress-theme",
                 "dist" : {
                     "type" : "zip",
-                    "url" : "https://github.com/bigspring/monolith/archive/master.zip"
+                    "url" : "https://github.com/bigspring/monolith/archive/develop.zip"
                 }
             }
         }
