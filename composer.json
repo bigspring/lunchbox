@@ -1,73 +1,73 @@
 {
-    "name" : "bigspring/lunchbox",
-    "description" : "Wordpress, Monolith and dependencies project builder",
-    "license": "MIT",
-    "authors" : [
-        {
-            "name" : "Dave Seaton",
-            "email" : "dave@bigspring.co.uk",
-            "homepage" : "http://www.bigspring.co.uk/"
-        }
-    ],
-    "type" : "project",
-    "repositories": [
-        {
-            "type" : "composer",
-            "url" : "http://wpackagist.org"
-        },
-        {
-            "type" : "package",
-            "package" : {
-                "name" : "wordpress",
-                "version" : "4.1.1",
-                "type" : "webroot",
-                "dist" : {
-                    "type" : "zip",
-                    "url" : "https://wordpress.org/latest.zip"
-                },
-                "require" : {
-                  "fancyguy/webroot-installer": "1.0.0"
-                }
-            }
-        },
-        {
-            "type" : "package",
-            "package" : {
-                "name" : "bigspring/monolith",
-                "version" : "2.0",
-                "type" : "wordpress-theme",
-                "dist" : {
-                    "type" : "zip",
-                    "url" : "https://github.com/bigspring/monolith/archive/develop.zip"
-                }
-            }
-        }
-    ],
-    "minimum-stability" : "dev",
-    "require" : {
-        "php" : ">=5.3.2",
-        "wordpress" : "4.*",
-        "fancyguy/webroot-installer" : "1.0.0",
-        "composer/installers" : "~1.0",
-        "bigspring/monolith" : "*",
-        "wpackagist-plugin/wordpress-seo" : "*",
-        "wpackagist-plugin/w3-total-cache" : "*",
-        "wpackagist-plugin/force-regenerate-thumbnails" : "*",
-        "wpackagist-plugin/widget-logic" : "*",
-        "wpackagist-plugin/bulk-page-creator" : "*",
-        "wpackagist-plugin/breadcrumb-navxt" : "*",
-        "wpackagist-plugin/advanced-text-widget" : "*",
-        "wpackagist-plugin/imsanity" : "*",
-        "wpackagist-plugin/contact-form-7" : "*",
-        "wpackagist-plugin/better-wp-security" : "*",
-        "wpackagist-plugin/wp-password-generator" : "*"
-    },
-    "extra" : {
-        "installer-paths": {
-            "LUNCHBOX_DIR/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-            "LUNCHBOX_DIR/wp-content/themes/{$name}/": ["type:wordpress-theme"]
-        },
-        "webroot-dir": "LUNCHBOX_DIR",
-        "webroot-package": "wordpress"
+  "name" : "bigspring/lunchbox",
+  "description" : "Wordpress, Monolith and dependencies project builder",
+  "license": "MIT",
+  "authors" : [
+    {
+      "name" : "DM Seaton",
+      "email" : "dave@bigspring.co.uk",
+      "homepage" : "http://www.bigspring.co.uk/"
     }
+  ],
+  "type" : "project",
+  "repositories": [
+    {
+      "type" : "composer",
+      "url" : "http://wpackagist.org"
+    },
+    {
+      "type" : "package",
+      "package" : {
+        "name" : "wordpress",
+        "version" : "4.2.2",
+        "type" : "webroot",
+        "dist" : {
+          "type" : "zip",
+          "url" : "https://wordpress.org/latest.zip"
+        },
+        "require" : {
+          "fancyguy/webroot-installer": "1.0.0"
+        }
+      }
+    },
+    {
+      "type" : "package",
+      "package" : {
+        "name" : "bigspring/monolith",
+        "version" : "2.0.4",
+        "type" : "wordpress-theme",
+        "dist" : {
+          "type" : "zip",
+          "url" : "https://github.com/bigspring/monolith/archive/master.zip"
+        }
+      }
+    }
+  ],
+  "minimum-stability" : "dev",
+  "require" : {
+    "php" : ">=5.3.2",
+    "wordpress" : "4.*",
+    "fancyguy/webroot-installer" : "1.0.0",
+    "composer/installers" : "~1.0",
+    "bigspring/monolith" : "*",
+    "wpackagist-plugin/wordpress-seo" : "*",
+    "wpackagist-plugin/w3-total-cache" : "*",
+    "wpackagist-plugin/force-regenerate-thumbnails" : "*",
+    "wpackagist-plugin/widget-logic" : "*",
+    "wpackagist-plugin/bulk-page-creator" : "*",
+    "wpackagist-plugin/breadcrumb-navxt" : "*",
+    "wpackagist-plugin/advanced-text-widget" : "*",
+    "wpackagist-plugin/imsanity" : "*",
+    "wpackagist-plugin/contact-form-7" : "*",
+    "wpackagist-plugin/better-wp-security" : "*",
+    "wpackagist-plugin/wp-password-generator" : "*"
+  },
+  "extra" : {
+    "installer-paths": {
+      "LUNCHBOX_DIR/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "LUNCHBOX_DIR/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "webroot-dir": "LUNCHBOX_DIR",
+    "webroot-package": "wordpress"
+  }
 }
