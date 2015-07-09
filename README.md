@@ -39,8 +39,7 @@ It is recommended that you use the companion installer/project tool [Munch](http
 composer install
 ```
 
-However, this will result in leftover Composer files.
-
+If you opt for the latter be sure to replace any instances of 'LUNCHBOX_DIR' with the desired path to your Wordpress root (or just rename the 'LUNCBOX_DIR' directory after install).
 
 achtung! danger!
 ------
