@@ -27,6 +27,7 @@ Lunchbox will install the following packages:
 * Imsanity
 * Better Wordpress Security
 * WP Password Generator
+* CMS Tree Page View
 
 If you'd like to request a plugin or feature, [create a new issue](https://github.com/bigspring/lunchbox/issues).
 
